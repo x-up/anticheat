@@ -76,7 +76,7 @@ function mPlayer.new(player)
 
 			if #animationId >= 50 then
 				self:Kick("stop exploiting 🙄 [1A]", "EXPLOIT | "..self.Player.Name.." kicked for long animation id")
-			elseif animationId == "rbxassetid://0" then -- create an empty animation and upload it to the delta group and change the id here
+			elseif animationId == "rbxassetid://0" then
 				self:Kick("stop exploiting 🙄 [2A]", "EXPLOIT | "..self.Player.Name.." kicked for playing ban animation")
 			elseif string.sub(animationId, 0, 13) ~= "rbxassetid://" and string.sub(animationId, 0, 32) ~= "http://www.roblox.com/asset/?id=" and string.sub(animationId, 0, 32) ~= "http://www.roblox.com/Asset?ID=" then
 				self:Kick("stop exploiting 🙄 [3A]", "EXPLOIT | "..self.Player.Name.." kicked for invalid animation id")
